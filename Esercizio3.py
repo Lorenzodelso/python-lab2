@@ -28,7 +28,10 @@ while True:
         list.append(task)
     elif choise==2:
         task = input("Task to be removed: ")
-        list.remove(task)
+        for cosa in todo_list:
+            if task in cosa:
+                todo_list.remove(cosa)
+
     elif choise==3:
         print (sorted(todo_list))
     elif choise==4:
